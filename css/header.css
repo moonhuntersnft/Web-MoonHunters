@@ -1,0 +1,40 @@
+header {
+  background-color: #011c31;
+  padding: 0.7rem 2rem;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  width: 300px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+header nav a {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+header #register-div #register-button {
+  display: none;
+  color: #FFFFFF;
+  background: #eb2b63;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+/*# sourceMappingURL=header.css.map */
