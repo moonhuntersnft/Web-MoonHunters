@@ -12,4 +12,17 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+
+    & .container-apresentacao {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        & h2 {
+            font-size: 2rem;
+            padding: 0 0 0.5rem;
+        }
+        & p {
+            padding: 0 0 1rem;
+        }
+    }
 }

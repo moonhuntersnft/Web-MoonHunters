@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: century-gothic, sans-serif;
+    color: $font;
 }
 
 html {
@@ -23,4 +24,11 @@ a {
 
 a:hover {
     cursor: pointer;
+}
+
+//Default classes
+.default-button {
+    background: $secondary;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
 }

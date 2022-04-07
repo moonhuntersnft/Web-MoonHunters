@@ -25,16 +25,7 @@ header nav {
 }
 
 header nav a {
-  color: #FFFFFF;
   font-size: 1.2rem;
   font-weight: 600;
-}
-
-header #register-div #register-button {
-  display: none;
-  color: #FFFFFF;
-  background: #eb2b63;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
 }
 /*# sourceMappingURL=header.css.map */
