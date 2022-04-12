@@ -16,7 +16,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="scripts/main.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -39,8 +39,24 @@
     </header>
 
     <!--!BODY-->
-    <div class="container-banner">
+    <div class="container-slider" id="sliderr">
+        <!-- slider para hacer correr todas las imagenes juntas y que container-slider tenga overflow:hidden -->
 
+        <div class="slider" id="slider">
+
+            <div class="slide-div">
+                <img src="images/1.png" alt="">
+                <a onclick="izquierda(this)" class="img-button"></a>
+            </div>
+            <div class="slide-div">
+                <img src="images/2.png" alt="">
+                <a onclick="derecha(this)" class="img-button"></a>
+            </div>
+            <div class="slide-div">
+                <img src="images/3.png" alt="">
+                <a onclick="" class="img-button"></a>
+            </div>
+        </div>
     </div>
 
     <div class="container-apresentacao">
@@ -54,7 +70,7 @@
             <a href="" class="default-button">Learn more</a>
         </div>
 
-        <iframe width="600" height="350" src="https://www.youtube.com/embed/2RlTqFtdlH8" title="YouTube video player" frameborder="0" 
+        <iframe width="500" height="280" src="https://www.youtube.com/embed/2RlTqFtdlH8" title="YouTube video player" frameborder="0" 
         allow="clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
     </div>    
     
