@@ -7,15 +7,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #011c31;
-  background-image: url("images/bg.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #202225;
 }
 
 body .container-slider {
@@ -30,22 +26,22 @@ body .container-slider .slider {
   display: flex;
   gap: 3rem;
   position: relative;
-  left: 10%;
+  left: -65%;
   -webkit-transition: .5s;
   transition: .5s;
 }
 
-body .container-slider .slider .slide-div {
+body .container-slider .slider .slide {
   min-width: 75%;
   position: relative;
 }
 
-body .container-slider .slider .slide-div img {
+body .container-slider .slider .slide img {
   width: 100%;
   height: auto;
 }
 
-body .container-slider .slider .slide-div .img-button {
+body .container-slider .slider .slide .img-button {
   position: absolute;
   left: 0;
   width: 100%;
@@ -70,5 +66,123 @@ body .container-apresentacao h2 {
 
 body .container-apresentacao p {
   padding-bottom: 2rem;
+}
+
+body .container-topCollections {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+body .container-topCollections .header-topCollections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container-topCollections .header-topCollections .titulo-topCollections {
+  position: relative;
+  left: 5%;
+  margin-right: 80%;
+}
+
+body .container-topCollections .header-topCollections .explore-topCollections {
+  padding: 0.1rem;
+  border: solid 1px white;
+  border-radius: 10%;
+}
+
+body .container-topCollections .topCollections {
+  width: 30%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  left: 5%;
+}
+
+body .container-topCollections .topCollections .item {
+  min-width: 57%;
+}
+
+body .container-topCollections .topCollections .item img {
+  width: 100%;
+  height: auto;
+}
+
+body .container-popularCases {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+body .container-popularCases .header-popularCases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container-popularCases .header-popularCases .titulo-popularCases {
+  position: relative;
+  left: 5%;
+  margin-right: 85%;
+}
+
+body .container-popularCases .header-popularCases .explore-popularCases {
+  padding: 0.1rem;
+  border: solid 1px white;
+  border-radius: 10%;
+}
+
+body .container-popularCases .popularCases {
+  width: 30%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  left: 5%;
+}
+
+body .container-popularCases .popularCases .item {
+  min-width: 57%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container-popularCases .popularCases .item img {
+  width: 100%;
+  height: auto;
+}
+
+body .container-popularCases .popularCases .item .price {
+  color: limegreen;
+  padding: 0.2rem;
+  border: solid 2px limegreen;
+  border-radius: 10%;
 }
 /*# sourceMappingURL=body.css.map */

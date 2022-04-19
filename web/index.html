@@ -39,22 +39,33 @@
     </header>
 
     <!--!BODY-->
-    <div class="container-slider" id="sliderr">
-        <!-- slider para hacer correr todas las imagenes juntas y que container-slider tenga overflow:hidden -->
+    <div class="container-slider">
 
         <div class="slider" id="slider">
 
-            <div class="slide-div">
+            <div class="slide" id="slide">
+                <img src="images/banner.png" alt="">
+                <a onclick="slider_move(this)" class="img-button toLast"></a>
+            </div>
+            <div class="slide">
                 <img src="images/1.png" alt="">
                 <a onclick="slider_move(this)" class="img-button"></a>
             </div>
-            <div class="slide-div">
+            <div class="slide">
                 <img src="images/2.png" alt="">
                 <a onclick="slider_move(this)" class="img-button"></a>
             </div>
-            <div class="slide-div">
+            <div class="slide">
                 <img src="images/3.png" alt="">
                 <a onclick="slider_move(this)" class="img-button"></a>
+            </div>
+            <div class="slide">
+                <img src="images/banner.png" alt="">
+                <a onclick="slider_move(this)" class="img-button"></a>
+            </div>
+            <div class="slide ">
+                <img src="images/1.png" alt="">
+                <a onclick="slider_move(this)" class="img-button toFirst"></a>
             </div>
         </div>
     </div>
@@ -72,7 +83,68 @@
 
         <iframe width="500" height="280" src="https://www.youtube.com/embed/2RlTqFtdlH8" title="YouTube video player" frameborder="0" 
         allow="clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-    </div>    
+    </div>
+
+    <div class="container-topCollections">
+
+        <div class="header-topCollections">
+            <div class="titulo-topCollections">TOP COLLECTIONS TODAY</div>
+            <div class="explore-topCollections">EXPLORE</div>
+        </div>
+
+        <div class="topCollections">
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+        </div>
+    </div>
     
+    <div class="container-popularCases">
+
+        <div class="header-popularCases">
+            <div class="titulo-popularCases">POPULAR CASES</div>
+            <div class="explore-popularCases">EXPLORE</div>
+        </div>
+
+        <div class="popularCases">
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+                <p>Genesis of the Moons</p>
+                <p class="price">$19,89</p>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+                <p>Order of the Moons</p>
+                <p class="price">$39,89</p>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+                <p>Rise of the MoonHunters</p>
+                <p class="price">$59,89</p>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+                <p>Revenge of the Moons</p>
+                <p class="price">$79,89</p>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+                <p>The Last MoonHunters</p>
+                <p class="price">$99,89</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
