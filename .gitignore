@@ -1,0 +1,5 @@
+# ignore all .css.map files
+*.css.map
+
+# ignore misc directory
+misc/
