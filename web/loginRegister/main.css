@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    background-color: #303641;
+    background-image: url("../images/loginRegister/background.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #F2F2F2;
+}
+
+.container-header{
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+.container-footer{
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+#container-login {
+    background-color: #373b3d;
+    position: relative;
+    top: 18%;
+    margin: auto;
+    width: 340px;
+    height: 445px;
+    border-radius: 2%;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#container-register {
+    background-color: #373b3d;
+    position: relative;
+    top: 17%;
+    margin: auto;
+    width: 340px;
+    height: 480px;
+    border-radius: 0.35em;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#title {
+    position: relative;
+    background-color: #373b3d;
+    width: 100%;
+    padding: 20px 0px;
+    border-radius: 2%;
+    font-size: 22px;
+    top: 10;
+}
+
+.input {
+    margin: auto;
+    width: 240px;
+    border-radius: 4px;
+    background-color:  #1D1F20 ;
+    padding: 8px 0px;
+    margin-top: 15px;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+input[type=text] {
+    color: #949494;
+    margin: 0;
+    background-color: #1D1F20;
+    border: 1px solid #1D1F20;
+    padding: 6px 0px;
+    border-radius: 3px;
+}
+
+input[type=text]:focus {
+    border: 1px solid #1D1F20;
+}
+
+input[type=password] {
+    color: #949494;
+    margin: 0;
+    background-color: #1D1F20;
+    border: 1px solid #1D1F20;
+    padding: 6px 0px;
+    border-radius: 3px;
+}
+
+input[type=password]:focus {
+    border: 1px solid #1D1F20;
+}
+
+input[type=email] {
+    color: #949494;
+    margin: 0;
+    background-color: #1D1F20;
+    border: 1px solid #1D1F20;
+    padding: 6px 0px;
+    border-radius: 3px;
+}
+
+input[type=email]:focus {
+    border: 1px solid #1D1F20;
+}
+
+.privacy {
+    margin-top: 5px;
+    position: relative;
+    font-size: 12px;
+    bottom: 0%;
+}
+
+.privacy a:link {
+    color: #949494;
+    text-decoration: none;
+}
+
+.privacy a:visited {
+    color: #949494;
+    text-decoration: none;
+}
+
+.privacy a:hover {
+    color: #C1C3C6;
+    transition: color 1s;
+}
+
+*:focus {
+    outline: none;
+}
+
+.remember-me {
+    margin: 20px 0;
+}
+
+input[type=submit] {
+    width: 36%;
+    padding: 6px 25px;
+    background: #1D1F20;
+    color: #C1C3C6;
+    font-weight: bold;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.register {
+    margin: auto;
+    padding: 16px 0;
+    text-align: center;
+    margin-top: 20px;
+    width: 85%;
+    border-top: 1px solid #C1C3C6;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#register-link {
+    width: 40%;
+    margin-top: 10px;
+    padding: 6px 25px;
+    background: #1D1F20;
+    color: #C1C3C6;
+    font-weight: bold;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 5px;
+}
