@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  /* Afecta a todos los elementos del documento */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: century-gothic, sans-serif;
+  color: #FFFFFF;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.default-button {
+  background: #eb2b63;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.default-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.default-container .default-container-header {
+  display: flex;
+}
+.default-container .default-container-header .default-container-titulo {
+  position: relative;
+  left: 5%;
+}
+.default-container .default-container-header .default-container-explore {
+  position: absolute;
+  left: 93%;
+  padding: 0.1rem;
+  border: solid 1px white;
+  border-radius: 10%;
+}
+
+header {
+  background-color: #011c31;
+  padding: 0.7rem 2rem;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 300px;
+}
+header nav {
+  display: flex;
+  gap: 2rem;
+}
+header nav a {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #202225;
+}
+body .container-princ {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+body .container-princ .coluna-esquerda {
+  width: 33.3%;
+  background-color: aqua;
+}
+body .container-princ .coluna-central {
+  width: 33.3%;
+  background-color: chartreuse;
+}
+body .container-princ .coluna-direita {
+  width: 33.3%;
+  background-color: goldenrod;
+}
+
+footer {
+  background-color: #011c31;
+  width: 100%;
+  padding: 1rem;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+footer .social-footer {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 2rem;
+}
+footer .social-footer a {
+  position: relative;
+  top: 4px;
+}
+footer .nav-footer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}/*# sourceMappingURL=style-perfil.css.map */

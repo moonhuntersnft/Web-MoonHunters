@@ -1,0 +1,24 @@
+footer {
+  background-color: #011c31;
+  width: 100%;
+  padding: 1rem;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+footer .social-footer {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 2rem;
+}
+footer .social-footer a {
+  position: relative;
+  top: 4px;
+}
+footer .nav-footer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}/*# sourceMappingURL=footer.css.map */

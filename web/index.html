@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoonHunters</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
@@ -15,13 +13,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dist/style-index.css">
     <script src="js/main.js" defer></script>
 </head>
 
 <body>
-    <!--!HEADER-->
-    <header class="container-header">
+    <!--! HEADER !-->
+    <header class="container-header" id="to-the-top">
         <a href="index.html"><img src="images/MHLogoSMALL.png" alt="Logo da MoonHunters"></a>
 
         <nav>
@@ -33,12 +31,11 @@
         </nav>
         
         <div class="register-div">
-            <!-- Possivelmente vamos ter que usar <button> ao invés de <a> -->
-            <a href="" class="default-button">Register</a>
+            <a href="perfil.html" class="default-button">Register</a>
         </div>
     </header>
 
-    <!--!BODY-->
+    <!--! Slider !-->
     <div class="container-slider">
 
         <div class="slider" id="slider">
@@ -70,6 +67,7 @@
         </div>
     </div>
 
+    <!--! Apresentação !-->
     <div class="container-apresentacao">
 
         <div class="texto-apresentacao">
@@ -85,11 +83,12 @@
         allow="clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <div class="container-topCollections">
+    <!--! Top Collections !-->
+    <div class="default-container">
 
-        <div class="header-topCollections">
-            <div class="titulo-topCollections">TOP COLLECTIONS TODAY</div>
-            <div class="explore-topCollections">EXPLORE</div>
+        <div class="default-container-header">
+            <div class="default-container-titulo">TOP COLLECTIONS TODAY</div>
+            <a href=""><div class="default-container-explore">EXPLORE</div></a>
         </div>
 
         <div class="topCollections">
@@ -111,11 +110,12 @@
         </div>
     </div>
     
-    <div class="container-popularCases">
+    <!--! Popular Cases !-->
+    <div class="default-container">
 
-        <div class="header-popularCases">
-            <div class="titulo-popularCases">POPULAR CASES</div>
-            <div class="explore-popularCases">EXPLORE</div>
+        <div class="default-container-header">
+            <div class="default-container-titulo">POPULAR CASES</div>
+            <a href=""><div class="default-container-explore">EXPLORE</div></a>
         </div>
 
         <div class="popularCases">
@@ -127,24 +127,76 @@
             <div class="item">
                 <a href=""><img src="images/topC.jpeg" alt=""></a>
                 <p>Order of the Moons</p>
-                <p class="price">$39,89</p>
+                <a href=""><p class="price">$39,89</p></a>
             </div>
             <div class="item">
                 <a href=""><img src="images/topC.jpeg" alt=""></a>
                 <p>Rise of the MoonHunters</p>
-                <p class="price">$59,89</p>
+                <a href=""><p class="price">$59,89</p></a>
             </div>
             <div class="item">
                 <a href=""><img src="images/topC.jpeg" alt=""></a>
                 <p>Revenge of the Moons</p>
-                <p class="price">$79,89</p>
+                <a href=""><p class="price">$79,89</p></a>
             </div>
             <div class="item">
                 <a href=""><img src="images/topC.jpeg" alt=""></a>
                 <p>The Last MoonHunters</p>
-                <p class="price">$99,89</p>
+                <a href=""><p class="price">$99,89</p></a>
             </div>
         </div>
+
     </div>
+
+    <!--! Last News !-->
+    <div class="default-container">
+
+        <div class="default-container-header">
+            <div class="default-container-titulo">LAST NEWS</div>
+            <a href=""><div class="default-container-explore">EXPLORE</div></a>
+        </div>
+        
+        <div class="lastNews">
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="images/topC.jpeg" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--! Footer !-->
+    <footer>
+        <div class="social-footer">
+            <p>Social Media</p>
+            <a><ion-icon name="logo-twitter"></ion-icon></a>
+            <a><ion-icon name="logo-youtube"></ion-icon></a>
+            <a><ion-icon name="logo-discord"></ion-icon></a>
+        </div>
+        <nav class="nav-footer">
+            <a href="#to-the-top">Voltar para o topo</a>
+            <a href="mailto:gamedeVision@gmail.com">Email de contato</a>
+        </nav>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
