@@ -1,0 +1,81 @@
+@use "colors.scss" as *;
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: linear-gradient($background-perfil1, $background-perfil2);
+
+    & .container-princ {
+        display: flex;
+
+        height: 100%;
+        width: 100%;
+
+        & .coluna-esquerda {
+            width: 25%;
+        }
+        & .coluna-central {
+            width: 50%;
+            
+            background: $background-perfil1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+            & .banner-perfil img {
+                width: 100%;
+                height: auto;
+            }
+
+            & .container-content {
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+
+                & .username {
+                    display: flex;
+                    align-items: center;
+    
+                    & .nivel {
+                        color: red;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        padding: 5px;
+    
+                        border: solid 2px red;
+                        border-radius: 2px 40% 2px 40%;
+                        
+                        margin-right: 0.7rem;
+                    }
+    
+                    & .name {
+    
+                        & .tag {
+                            color: #0f4069;
+                        }
+                    }
+    
+                    & .edit-profile {
+                        font-size: 0.8rem;
+                        margin-left: 65%;
+                    }
+                }
+    
+                & .bio {
+                    padding: 1.2rem;
+                    background-color: $primary;
+    
+                    border-radius: 15px;
+                }
+            }
+        }
+
+        & .coluna-direita {
+            width: 25%;
+        }
+    }
+}
