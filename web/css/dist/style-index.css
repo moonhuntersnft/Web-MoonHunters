@@ -48,8 +48,10 @@ a:hover {
   left: 5%;
 }
 .default-container .default-container-header .default-container-explore {
-  position: absolute;
-  left: 93%;
+  margin-left: auto;
+  margin-right: 0;
+  position: relative;
+  right: 1.5%;
   padding: 0.1rem;
   border: solid 1px white;
   border-radius: 10%;
