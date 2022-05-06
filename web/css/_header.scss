@@ -6,20 +6,30 @@ header {
     min-width: 100%;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
-    & img {
-        width: 300px;
+    & a {
+        width: 25%;
+        & img {
+            width: 250px;
+        }
     }
 
     & nav {
         display: flex;
         gap: 2rem;
 
+        margin: 0 auto;
+
         & a {
             font-size: 1.2rem;
             font-weight: 600;
         }
+    }
+
+    & .register-div {
+        width: 25%;
+        display: flex;
+        justify-content: end;
     }
 }

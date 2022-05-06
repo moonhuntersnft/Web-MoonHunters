@@ -62,19 +62,27 @@ header {
   padding: 0.7rem 2rem;
   min-width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-header img {
-  width: 300px;
+header a {
+  width: 25%;
+}
+header a img {
+  width: 250px;
 }
 header nav {
   display: flex;
   gap: 2rem;
+  margin: 0 auto;
 }
 header nav a {
   font-size: 1.2rem;
   font-weight: 600;
+}
+header .register-div {
+  width: 25%;
+  display: flex;
+  justify-content: end;
 }
 
 body {

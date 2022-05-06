@@ -62,28 +62,37 @@ header {
   padding: 0.7rem 2rem;
   min-width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
-header img {
-  width: 300px;
+header a {
+  width: 25%;
+}
+header a img {
+  width: 250px;
 }
 header nav {
   display: flex;
   gap: 2rem;
+  margin: 0 auto;
 }
 header nav a {
   font-size: 1.2rem;
   font-weight: 600;
 }
+header .register-div {
+  width: 25%;
+  display: flex;
+  justify-content: end;
+}
 
 body {
-  min-height: 100%;
   min-width: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(#002846, #000f19);
+  background-attachment: fixed;
 }
 body .container-princ {
   display: flex;
@@ -101,14 +110,20 @@ body .container-princ .coluna-central {
 body .container-princ .coluna-central .banner-perfil img {
   width: 100%;
   height: auto;
+  display: block;
 }
 body .container-princ .coluna-central .container-content {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem 2rem 2rem;
+}
+body .container-princ .coluna-central .container-content .container-user {
   display: flex;
   gap: 2rem;
   align-items: center;
 }
-body .container-princ .coluna-central .container-content .img-perfil {
+body .container-princ .coluna-central .container-content .container-user .img-perfil {
   width: 120px;
   height: 120px;
   -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
@@ -117,39 +132,40 @@ body .container-princ .coluna-central .container-content .img-perfil {
   top: -2rem;
   right: -1rem;
 }
-body .container-princ .coluna-central .container-content .container-username {
+body .container-princ .coluna-central .container-content .container-user .container-username {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
-body .container-princ .coluna-central .container-content .container-username .username {
+body .container-princ .coluna-central .container-content .container-user .container-username .username {
   padding: 1.2rem;
   display: flex;
   align-items: center;
 }
-body .container-princ .coluna-central .container-content .container-username .username .nivel {
+body .container-princ .coluna-central .container-content .container-user .container-username .username .nivel {
   color: red;
   font-size: 1.2rem;
   font-weight: 600;
-  padding: 5px;
+  padding: 5px 7px;
   border: solid 2px red;
   border-radius: 2px 40% 2px 40%;
   margin-right: 0.7rem;
 }
-body .container-princ .coluna-central .container-content .container-username .username .name .tag {
+body .container-princ .coluna-central .container-content .container-user .container-username .username .name .tag {
+  margin-left: 2px;
   color: #0f4069;
 }
-body .container-princ .coluna-central .container-content .container-username .username .edit-profile {
+body .container-princ .coluna-central .container-content .container-user .container-username .username .edit-profile {
   font-size: 0.8rem;
   margin-left: auto;
   margin-right: 0;
 }
-body .container-princ .coluna-central .container-content .bio {
+body .container-princ .coluna-central .container-content .container-user .bio {
   padding: 1.2rem;
   background-color: #011c31;
   border-radius: 1rem;
 }
-body .container-princ .coluna-central .galeria {
-  margin: 1rem;
+body .container-princ .coluna-central .container-content .galeria {
   padding: 2rem;
   background-color: #011c31;
   border-radius: 1rem;
@@ -157,26 +173,27 @@ body .container-princ .coluna-central .galeria {
   flex-direction: column;
   gap: 1rem;
 }
-body .container-princ .coluna-central .galeria .galeria-header {
+body .container-princ .coluna-central .container-content .galeria .galeria-header {
   display: flex;
   justify-content: space-between;
 }
-body .container-princ .coluna-central .galeria .galeria-header a {
+body .container-princ .coluna-central .container-content .galeria .galeria-header a {
   font-size: 1.5rem;
 }
-body .container-princ .coluna-central .galeria .imagens {
+body .container-princ .coluna-central .container-content .galeria .imagens {
   display: flex;
   gap: 2rem;
 }
-body .container-princ .coluna-central .galeria .imagens img {
-  width: 80%;
+body .container-princ .coluna-central .container-content .galeria .imagens img {
+  width: 100%;
   height: auto;
+  border-radius: 0.5rem;
 }
-body .container-princ .coluna-central .galeria .galeria-footer {
+body .container-princ .coluna-central .container-content .galeria .galeria-footer {
   margin-left: auto;
   margin-right: 0;
 }
-body .container-princ .coluna-central .galeria .galeria-footer .arrows {
+body .container-princ .coluna-central .container-content .galeria .galeria-footer .arrows {
   text-align: center;
   font-size: 1.5rem;
 }
