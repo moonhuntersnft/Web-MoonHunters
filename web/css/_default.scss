@@ -26,9 +26,14 @@ a:hover {
 
 //Default classes
 .default-button {
-    background: $secondary;
+    background: $button-bg;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
+
+    transition: 80ms;
+    &:hover {
+        background-color: $button-bg-hover;
+    }
 }
 
 .default-container {

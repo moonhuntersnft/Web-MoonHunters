@@ -30,6 +30,10 @@ a:hover {
   background: #eb2b63;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
+  transition: 80ms;
+}
+.default-button:hover {
+  background-color: #cd2555;
 }
 
 .default-container {
@@ -124,8 +128,8 @@ body .container-slider .slider .slide .img-button {
 }
 body .container-apresentacao {
   display: flex;
-  gap: 3rem;
   align-items: center;
+  gap: 3rem;
 }
 body .container-apresentacao h2 {
   font-size: 2rem;
@@ -133,6 +137,16 @@ body .container-apresentacao h2 {
 }
 body .container-apresentacao p {
   padding-bottom: 2rem;
+}
+body .container-apresentacao .video-apresentacao {
+  width: 30rem;
+  height: auto;
+}
+body .container-apresentacao .video-apresentacao iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 body .topCollections, body .popularCases {
   width: 30%;

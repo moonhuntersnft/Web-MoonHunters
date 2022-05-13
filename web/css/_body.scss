@@ -51,8 +51,8 @@ body {
 
     & .container-apresentacao {
         display: flex;
-        gap: 3rem;
         align-items: center;
+        gap: 3rem;
 
         & h2 {
             font-size: 2rem;
@@ -60,6 +60,17 @@ body {
         }
         & p {
             padding-bottom: 2rem;
+        }
+
+        & .video-apresentacao {
+            width: 30rem;
+            height: auto;
+            & iframe {
+                aspect-ratio: 16/9;
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
         }
     }
 

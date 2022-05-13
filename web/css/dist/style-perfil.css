@@ -30,6 +30,10 @@ a:hover {
   background: #eb2b63;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
+  transition: 80ms;
+}
+.default-button:hover {
+  background-color: #cd2555;
 }
 
 .default-container {
@@ -107,7 +111,7 @@ body .container-princ .coluna-esquerda {
 }
 body .container-princ .coluna-esquerda .trending {
   background-color: #011c31;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -126,6 +130,24 @@ body .container-princ .coluna-esquerda .trending li img {
   border-radius: 50%;
   margin-left: auto;
   margin-right: 0;
+}
+body .container-princ .coluna-esquerda .news {
+  background-color: #011c31;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+body .container-princ .coluna-esquerda .news li {
+  list-style: none;
+  margin-bottom: 0.7rem;
+}
+body .container-princ .coluna-esquerda .news li img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
 }
 body .container-princ .coluna-central {
   background: #002846;
@@ -187,12 +209,12 @@ body .container-princ .coluna-central .container-content .container-user .contai
 body .container-princ .coluna-central .container-content .container-user .bio {
   padding: 1.2rem;
   background-color: #011c31;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 body .container-princ .coluna-central .container-content .inventario {
   padding: 2rem;
   background-color: #011c31;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -223,7 +245,7 @@ body .container-princ .coluna-central .container-content .inventario .inventario
 body .container-princ .coluna-central .container-content .badges {
   padding: 2rem;
   background-color: #011c31;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -250,7 +272,7 @@ body .container-princ .coluna-central .container-content .badges .badges-footer 
 body .container-princ .coluna-central .container-content .galeria {
   padding: 2rem;
   background-color: #011c31;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;

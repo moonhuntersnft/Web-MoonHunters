@@ -26,7 +26,7 @@ body {
 
             & .trending {
                 background-color: $primary;
-                border-radius: 1rem;
+                border-radius: .5rem;
                 padding: 1.5rem;
 
                 display: flex;
@@ -39,7 +39,7 @@ body {
                     align-items: center;
                     gap: 1rem;
 
-                    margin-bottom: 0.7rem;
+                    margin-bottom: .7rem;
 
                     & img {
                         width: 35px;
@@ -51,11 +51,32 @@ body {
                     }
                 }
             }
+            & .news {
+                background-color: $primary;
+                border-radius: .5rem;
+                padding: 1.5rem;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+
+                & li {
+                    list-style: none;
+                    margin-bottom: .7rem;
+
+                    & img {
+                        width: 100%;
+                        height: auto;
+                        border-radius: .5rem;
+                    }
+                }
+            }
         }
 
         & .coluna-central {
             background: $background-perfil1;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 
             & .banner-perfil img {
                 width: 100%;
@@ -107,7 +128,7 @@ body {
                                 border: solid 2px red;
                                 border-radius: 2px 40% 2px 40%;
                                 
-                                margin-right: 0.7rem;
+                                margin-right: .7rem;
                             }
     
                             & .name {
@@ -119,7 +140,7 @@ body {
                             }
     
                             & .edit-profile {
-                                font-size: 0.8rem;
+                                font-size: .8rem;
                                 margin-left: auto;
                                 margin-right: 0;
                             }
@@ -131,7 +152,7 @@ body {
                         padding: 1.2rem;
                         background-color: $primary;
         
-                        border-radius: 1rem;
+                        border-radius: .5rem;
                     }
                 }
 
@@ -139,7 +160,7 @@ body {
                     padding: 2rem;
     
                     background-color: $primary;
-                    border-radius: 1rem;
+                    border-radius: .5rem;
     
                     display: flex;
                     flex-direction: column;
@@ -156,17 +177,17 @@ body {
 
                     & .imagens {
                         div:first-child {
-                            margin-bottom: 0.8rem;
+                            margin-bottom: .8rem;
                         }
 
                         & .fileira-cima, & .fileira-baixo {
                             display: flex;
-                            gap: 0.8rem;
+                            gap: .8rem;
     
                             & img {
                                 width: 100%;
                                 height: 100%;
-                                border-radius: 0.5rem;
+                                border-radius: .5rem;
                             }
                         }
                     }
@@ -181,7 +202,7 @@ body {
                     padding: 2rem;
     
                     background-color: $primary;
-                    border-radius: 1rem;
+                    border-radius: .5rem;
     
                     display: flex;
                     flex-direction: column;
@@ -216,7 +237,7 @@ body {
                     padding: 2rem;
     
                     background-color: $primary;
-                    border-radius: 1rem;
+                    border-radius: .5rem;
     
                     display: flex;
                     flex-direction: column;
@@ -239,7 +260,7 @@ body {
                             width: 100%;
                             height: auto;
 
-                            border-radius: 0.5rem;
+                            border-radius: .5rem;
                         }
                     }
     
