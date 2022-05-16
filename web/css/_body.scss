@@ -12,41 +12,69 @@ body {
     background-color: $background;
 
     & .container-slider {
+        display: flex;
+        justify-content: center;
         overflow: hidden;
 
-        & .slider {
-            width: 100%;
-            height: auto;
-
+        & .handle {
+            border: none;
+            border-radius: 1rem;
+            flex-grow: 0;
+            background-color: rgba(0, 0, 0, 0.25);
+            z-index: 10;
+            margin: .25rem 0;
+            padding: 0 0.5rem;
+            cursor: pointer;
+            font-size: 5rem;
             display: flex;
-            gap: 3rem;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            line-height: 0;
+            transition: background-color .7s ease-in-out;
 
-            position: relative;
-            left: -65%;
-            //? left: -0%;
-            // left: -300% ultimo slide
+            & .text {
+                transition: transform 150ms ease-in-out;
+            }
 
-            transition: .5s;
-            & .slide {
-                min-width: 75%;
-                position: relative;
-    
-                & img {
-                    display: block;
-                    width: 100%;
-                    height: auto;
-                }
-    
-                & .img-button {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-    
-                    width: 100%;
-                    height: 100%;
-                }
+            &:hover,
+            &:focus {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            &:hover .text,
+            &:focus .text {
+                transform: scale(1.2);
             }
         }
+        
+        .left-handle {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        
+        .right-handle {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        & .slider {
+            --slider-index: 1;
+            display: flex;
+            flex-grow: 1;
+            margin: 0 0.25rem;
+            transform: translate(calc(var(--slider-index) * -100%));
+            transition: transform 250ms ease-in-out;
+
+            & img {
+                /* width: 25%; */
+                flex: 0 0 100%;
+                max-width: 100%;
+                aspect-ratio: 16/4;
+                padding: .25rem;
+                border-radius: 0.3rem;
+            }
+        }
+        
     }
 
     & .container-apresentacao {
