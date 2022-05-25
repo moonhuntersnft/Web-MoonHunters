@@ -39,6 +39,7 @@ a:hover {
 .default-container {
   position: relative;
   overflow: hidden;
+  padding-inline: 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -48,17 +49,15 @@ a:hover {
   display: flex;
 }
 .default-container .default-container-header .default-container-titulo {
-  position: relative;
-  left: 5%;
+  margin-left: 0.5rem;
+  margin-right: auto;
 }
 .default-container .default-container-header .default-container-explore {
   margin-left: auto;
-  margin-right: 0;
-  position: relative;
-  right: 1.5%;
-  padding: 0.1rem;
+  margin-right: 0.5rem;
+  padding: 0.2rem;
   border: solid 1px white;
-  border-radius: 10%;
+  border-radius: 0.3rem;
 }
 
 header {
@@ -67,6 +66,7 @@ header {
   min-width: 100%;
   display: flex;
   align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header a {
   width: 25%;
@@ -105,7 +105,7 @@ body .container-slider {
 }
 body .container-slider .handle {
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   flex-grow: 0;
   background-color: rgba(0, 0, 0, 0.25);
   z-index: 10;
@@ -145,13 +145,20 @@ body .container-slider .slider {
   transform: translate(calc(var(--slider-index) * -100%));
   transition: transform 250ms ease-in-out;
 }
-body .container-slider .slider img {
-  /* width: 25%; */
+body .container-slider .slider a {
   flex: 0 0 100%;
+  padding: 0.25rem;
   max-width: 100%;
   aspect-ratio: 16/4;
-  padding: 0.25rem;
+}
+body .container-slider .slider a img {
+  width: 100%;
+  height: auto;
   border-radius: 0.3rem;
+  transition: opacity 0.2s ease-in-out;
+}
+body .container-slider .slider a img:hover {
+  opacity: 0.6;
 }
 body .container-apresentacao {
   display: flex;
@@ -176,15 +183,12 @@ body .container-apresentacao .video-apresentacao iframe {
   display: block;
 }
 body .topCollections, body .popularCases {
-  width: 30%;
+  width: 100%;
   height: auto;
   display: flex;
   gap: 2rem;
-  position: relative;
-  left: 5%;
 }
 body .topCollections .item, body .popularCases .item {
-  min-width: 57%;
   display: flex;
   gap: 0.7rem;
   flex-direction: column;
@@ -194,6 +198,7 @@ body .topCollections .item img, body .popularCases .item img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 0.1rem;
 }
 body .topCollections .item .price, body .popularCases .item .price {
   color: limegreen;
@@ -202,13 +207,11 @@ body .topCollections .item .price, body .popularCases .item .price {
   border-radius: 10%;
 }
 body .lastNews {
-  width: 94%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: "bigImg bigImg" "bigImg bigImg";
   gap: 1.5rem;
-  position: relative;
-  left: 5%;
 }
 body .lastNews :first-child {
   position: relative;
