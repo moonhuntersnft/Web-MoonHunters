@@ -1,0 +1,21 @@
+{
+  "name": "web-moonhunters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-compile": "sass web/css:web/dist --no-source-map --style=compressed",
+    "sass-watch": "sass --watch web/css:web/dist --no-source-map --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonhuntersnft/Web-MoonHunters.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moonhuntersnft/Web-MoonHunters/issues"
+  },
+  "homepage": "https://github.com/moonhuntersnft/Web-MoonHunters#readme"
+}

@@ -1,0 +1,223 @@
+@use "colors.scss" as *;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // background-image: linear-gradient($background-perfil1, $background-perfil2);
+    // background-repeat: no-repeat;
+    background-color: $background-perfil1;
+
+    &__content {
+        width: 75vw;
+
+        &:last-child {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+.banner {
+    & img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.container-user {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    & .img-perfil {
+        width: 150px;
+        height: 150px;
+        clip-path: url(#clipPath);
+
+        position: relative;
+        top: -1rem;
+        right: -1rem;
+    }
+
+    & .container-username {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+        & .username {
+            padding: 1.2rem;
+
+            display: flex;
+            align-items: center;
+
+            & .nivel {
+                color: red;
+                font-size: 1.2rem;
+                font-weight: 600;
+                padding: 5px 7px;
+
+                border: solid 2px red;
+                border-radius: 2px 40% 2px 40%;
+                
+                margin-right: .7rem;
+            }
+
+            & .name {
+                font-size: 1.5rem;
+
+                & .tag {
+                    margin-left: 2px;
+                    color: #0f4069;
+                }
+            }
+
+            & .edit-profile {
+                font-size: .8rem;
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+
+        & .buttons {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            & .username-menu {
+                height: 2.25rem;
+                font-size: 1.3rem;
+
+                background-color: $button;
+                // padding: .5rem;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+}
+
+.inventario {
+    background-color: $primary;
+    padding: 2rem 5rem;
+    border-radius: .3rem;
+
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: .8rem;
+
+        & .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            & > * {
+                padding: .4rem 1rem;
+                border-radius: .3rem;
+                border:none;
+                background-color: $background-perfil1;
+            }
+        }
+    }
+
+    & .imagens {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            border-radius: .2rem;
+        }
+    }
+
+    & .inventario-footer {
+        margin-left: auto;
+        margin-right: 0;
+
+        & .arrows {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            gap: .5rem;
+
+            & .handle {
+                position: relative;
+                top: .2rem;
+            }
+        }
+    }
+}
+
+.badges {
+    background-color: $primary;
+    padding: 2rem 5rem;
+    border-radius: .3rem;
+
+    margin-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: .8rem;
+
+        & .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            & > * {
+                padding: .4rem 1rem;
+                border-radius: .3rem;
+                border:none;
+                background-color: $background-perfil1;
+            }
+        }
+    }
+
+    & .imagens {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            border-radius: .2rem;
+        }
+    }
+
+    & .badges-footer {
+        margin-left: auto;
+        margin-right: 0;
+
+        & .arrows {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            gap: .5rem;
+
+            & .handle {
+                position: relative;
+                top: .2rem;
+            }
+        }
+    }
+}

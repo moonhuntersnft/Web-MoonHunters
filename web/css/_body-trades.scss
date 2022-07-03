@@ -1,0 +1,198 @@
+@use "_colors.scss" as *;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // background-image: linear-gradient($background-perfil1, $background-perfil2);
+    // background-repeat: no-repeat;
+    background-color: $background-perfil1;
+
+    &__content {
+        width: 75vw;
+
+        &:last-child {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+
+.banner {
+    & img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.container-user {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    & .img-perfil {
+        width: 150px;
+        height: 150px;
+        clip-path: url(#clipPath);
+
+        position: relative;
+        top: -1rem;
+        right: -1rem;
+    }
+
+    & .container-username {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+        & .username {
+            padding: 1.2rem;
+
+            display: flex;
+            align-items: center;
+
+            & .nivel {
+                color: red;
+                font-size: 1.2rem;
+                font-weight: 600;
+                padding: 5px 7px;
+
+                border: solid 2px red;
+                border-radius: 2px 40% 2px 40%;
+                
+                margin-right: .7rem;
+            }
+
+            & .name {
+                font-size: 1.5rem;
+
+                & .tag {
+                    margin-left: 2px;
+                    color: #0f4069;
+                }
+            }
+
+            & .edit-profile {
+                font-size: .8rem;
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+
+        & .buttons {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            & .username-menu {
+                height: 2.25rem;
+                font-size: 1.3rem;
+
+                background-color: $button;
+                // padding: .5rem;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+}
+
+.trades {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 1rem;
+    align-items: flex-start;
+
+    &__main > :not(:first-child) {
+        margin-top: 1rem;
+    }
+
+    &__aside {
+        text-align: center;
+        background-color: $primary;
+        padding: 1rem;
+        border-radius: .3rem;
+
+        & > * {
+            display: block;
+            padding: .8rem .5rem;
+            border-radius: .3rem;
+            margin: .5rem 0;
+        }
+
+        & > a:hover {
+            background-color: $button-bg;
+        }
+    }
+}
+
+.trade {
+    background-color: $primary;
+    padding: 2rem;
+    border-radius: .3rem;
+    & > :not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        & img {
+            clip-path: url(#clipPath);
+            width: 60px;
+            height: 60px;
+        }
+    }
+    &__footer {
+        display: flex;
+
+        &-right {
+            margin-left: auto;
+            margin-right: 0;
+            
+            display: flex;
+            gap: 2rem;
+        }
+    }
+    &__content {
+        background-color: $background-perfil1;
+        padding: 2rem 3rem;
+        border-radius: .3rem;
+
+        display: flex;
+
+        .trade__card {
+            flex-basis: 100%;
+            & p {
+                margin-bottom: 1rem;
+            }
+            & img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: .5rem;
+            }
+
+        }
+
+        .trade__icon {
+            flex-basis: 40%;
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & ion-icon {
+                font-size: 4rem;
+            }
+        }
+    }
+}
