@@ -1,0 +1,127 @@
+@use "_colors.scss" as *;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // background-image: linear-gradient($background-perfil1, $background-perfil2);
+    // background-repeat: no-repeat;
+    background-color: $background-perfil1;
+
+    &__content {
+        width: 75vw;
+
+        &:last-child {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.container-user {
+    margin: 3rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & .img-perfil {
+        width: 150px;
+        height: 150px;
+        clip-path: url(#clipPath);
+    }
+
+    & .container-username {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+
+        & .username {
+            padding: 1.2rem;
+
+            display: flex;
+            align-items: center;
+
+            & .nivel {
+                color: red;
+                font-size: 1.2rem;
+                font-weight: 600;
+                padding: 5px 7px;
+
+                border: solid 2px red;
+                border-radius: 2px 40% 2px 40%;
+                
+                margin-right: .7rem;
+            }
+
+            & .name {
+                font-size: 1.5rem;
+
+                & .tag {
+                    margin-left: 2px;
+                    color: #0f4069;
+                }
+            }
+
+            & .edit-profile {
+                font-size: .8rem;
+                margin-left: auto;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.friends {
+    padding: 2rem;
+
+    background-color: $primary;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &-header {
+        margin-left: 0;
+        margin-right: auto;
+
+        font-size: 1.2rem;
+    }
+
+    &-container {
+        display: flex;
+        gap: 1rem;
+        flex-flow: row wrap;
+
+        & a {
+            flex: 1 1 23%;
+        }
+    }
+
+    &-card{
+        padding: .7rem;
+
+        background-color: $background-perfil1;
+        border-radius: .5rem;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        &-left{
+            img {
+                max-width: 70px;
+                max-height: 70px;
+                clip-path: url(#clipPath);
+            }
+        }
+    }
+    
+    &-footer {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
